@@ -1,0 +1,25 @@
+# MonoRange-YOLO requirements
+# Tested with Python 3.11 on Windows (NVIDIA GTX 1650), Ultralytics 8.4.x.
+#
+# 1) Install PyTorch FIRST, as a CUDA build (pip install -r would otherwise pull the CPU-only wheel on Windows):
+#      pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+#    Pick the CUDA tag that matches your driver at https://pytorch.org/get-started/locally/
+#    Verify:  python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+#    (no '+cpu' in the version, and True)
+#    CPU-only machines can use:  pip install torch torchvision
+#
+# 2) Then:  pip install -r requirements.txt
+
+torch>=2.0
+torchvision>=0.15
+
+ultralytics>=8.4          # YOLO26 support; tested with 8.4.215
+numpy>=1.26
+opencv-python>=4.10       # GUI build (not -headless); 4.10+ is built for NumPy 2
+pillow>=10.0
+matplotlib>=3.9           # older versions break with NumPy 2 ("numpy.core.multiarray failed to import")
+
+# Optional, for ONNX export and architecture inspection (edge-optimisation stage)
+# onnx
+# onnxslim
+# netron
