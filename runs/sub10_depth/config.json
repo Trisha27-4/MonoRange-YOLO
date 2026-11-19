@@ -1,0 +1,31 @@
+{
+  "args": {
+    "stage": "depth",
+    "name": "sub10",
+    "freeze": "10",
+    "subset": 1.0,
+    "det_imgsz": 640,
+    "val_every": 10,
+    "val_subset": -1.0,
+    "test_epochs": 15,
+    "det_epochs": 60,
+    "depth_epochs": 60,
+    "batch": 8,
+    "lr": 0.001,
+    "workers": 4,
+    "conf": 0.5,
+    "device": "cuda:0",
+    "det_weights": "runs/sub10_det/weights/best.pt"
+  },
+  "BETA": 14.4,
+  "USE_GEO_PRIOR": true,
+  "LAMBDA_GEO": 0.0,
+  "BOX_JITTER": 0.1,
+  "IMG_HW": [
+    384,
+    1248
+  ],
+  "VAL_N": 500,
+  "SEED": 0,
+  "head_params": 1862209
+}

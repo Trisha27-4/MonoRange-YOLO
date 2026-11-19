@@ -1,0 +1,11 @@
+﻿training/
+testing/
+yolo26n-depth.onnx
+yolo26n-depth.pt
+yolo26n.onnx
+yolo26n.onnx
+writing-block.md
+runs/exp1_test_det/
+kitti_yolo/
+runs\sub10_det\weights\last.pt
+runs\sub10_depth\weights\last.pt

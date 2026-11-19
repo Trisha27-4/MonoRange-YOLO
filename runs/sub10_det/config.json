@@ -1,0 +1,23 @@
+{
+  "args": {
+    "stage": "all",
+    "name": "sub10",
+    "freeze": "10",
+    "subset": 0.1,
+    "det_imgsz": 640,
+    "val_every": 1,
+    "val_subset": -1.0,
+    "test_epochs": 15,
+    "det_epochs": 60,
+    "depth_epochs": 60,
+    "batch": 4,
+    "lr": 0.001,
+    "workers": 4,
+    "conf": 0.5,
+    "device": "cuda:0",
+    "det_weights": "C:\\Users\\TRISHA\\ERIC-robo\\runs\\sub10_det\\weights\\best.pt"
+  },
+  "freeze": 10,
+  "weights": "yolo26n.pt",
+  "imgsz": 640
+}
